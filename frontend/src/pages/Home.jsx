@@ -151,21 +151,41 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* ── Stats row (reference image feature) ── */}
+          {/* ── Stats row ── gradient text per word like reference image ── */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 48, marginTop: 40, flexWrap: 'wrap' }}>
-            {[
-              { value: '50+',  label: 'AI Tools',   color: '#a855f7' },
-              { value: '7',    label: 'Categories',  color: 'hsl(var(--foreground))' },
-              { value: 'Free', label: 'to Explore',  color: '#fbbf24' },
-            ].map((stat) => (
-              <div key={stat.label} style={{ textAlign: 'center' }}>
-                <div style={{ fontFamily: 'General Sans, sans-serif', fontWeight: 700, fontSize: 28, color: stat.color, letterSpacing: '-0.02em', lineHeight: 1 }}>
-                  {stat.value}
-                </div>
-                <div style={{ fontSize: 12, color: 'rgba(245,240,230,0.5)', marginTop: 4 }}>{stat.label}</div>
-              </div>
-            ))}
+            {/* 50+ — purple → blue gradient */}
+            <div style={{ textAlign: 'center' }}>
+              <div style={{
+                fontFamily: 'General Sans, sans-serif', fontWeight: 700, fontSize: 28,
+                letterSpacing: '-0.02em', lineHeight: 1,
+                background: 'linear-gradient(135deg, #a855f7 0%, #818cf8 60%, #6366f1 100%)',
+                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>50+</div>
+              <div style={{ fontSize: 12, color: 'rgba(245,240,230,0.5)', marginTop: 4 }}>AI Tools</div>
+            </div>
+            {/* 7 — white */}
+            <div style={{ textAlign: 'center' }}>
+              <div style={{
+                fontFamily: 'General Sans, sans-serif', fontWeight: 700, fontSize: 28,
+                letterSpacing: '-0.02em', lineHeight: 1,
+                color: 'hsl(var(--foreground))',
+              }}>7</div>
+              <div style={{ fontSize: 12, color: 'rgba(245,240,230,0.5)', marginTop: 4 }}>Categories</div>
+            </div>
+            {/* Free — orange → gold gradient */}
+            <div style={{ textAlign: 'center' }}>
+              <div style={{
+                fontFamily: 'General Sans, sans-serif', fontWeight: 700, fontSize: 28,
+                letterSpacing: '-0.02em', lineHeight: 1,
+                background: 'linear-gradient(135deg, #f97316 0%, #fbbf24 60%, #fde68a 100%)',
+                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>Free</div>
+              <div style={{ fontSize: 12, color: 'rgba(245,240,230,0.5)', marginTop: 4 }}>to Explore</div>
+            </div>
           </div>
+
 
         </div>
       </div>
