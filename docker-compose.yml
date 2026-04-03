@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: devops/docker/frontend.Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api-gateway
+
+  auth-service:
+    build:
+      context: .
+      dockerfile: devops/docker/auth.Dockerfile
+    environment:
+      - JWT_SECRET=change-this-secret
+      - JWT_ALGORITHM=HS256
+    ports:
+      - "8001:8001"
+
+  ai-service:
+    build:
+      context: .
+      dockerfile: devops/docker/ai.Dockerfile
+    ports:
+      - "8002:8002"
+
+  api-gateway:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./backend/api-gateway:/app
+    command: sh -c "pip install fastapi uvicorn httpx && uvicorn gateway:app --host 0.0.0.0 --port 8000"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - auth-service
+      - ai-service

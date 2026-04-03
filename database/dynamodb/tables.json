@@ -1,0 +1,16 @@
+{
+  "Tables": [
+    {
+      "TableName": "AIUniverseUsers",
+      "KeySchema": [{"AttributeName": "userId", "KeyType": "HASH"}],
+      "AttributeDefinitions": [{"AttributeName": "userId", "AttributeType": "S"}],
+      "BillingMode": "PAY_PER_REQUEST"
+    },
+    {
+      "TableName": "AIUniverseTools",
+      "KeySchema": [{"AttributeName": "toolId", "KeyType": "HASH"}],
+      "AttributeDefinitions": [{"AttributeName": "toolId", "AttributeType": "S"}],
+      "BillingMode": "PAY_PER_REQUEST"
+    }
+  ]
+}

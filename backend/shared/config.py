@@ -1,0 +1,2 @@
+AUTH_SERVICE_URL = "http://localhost:8001"
+AI_SERVICE_URL = "http://localhost:8002"

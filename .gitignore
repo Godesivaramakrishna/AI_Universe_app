@@ -1,24 +1,46 @@
-# Logs
-logs
+# ── Secrets — NEVER commit these ──────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.env
+
+# ── Python ─────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+
+# ── Node / Frontend ────────────────────────────────────────────────────────────
+node_modules/
+dist/
+.next/
+.nuxt/
+.cache/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ── TinyDB data (local database files) ────────────────────────────────────────
+backend/api/data/
+backend/api/*.json
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# ── OS / Editor ────────────────────────────────────────────────────────────────
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
+
+# ── Misc ───────────────────────────────────────────────────────────────────────
+*.zip
+bun.lock
+bun.lockb

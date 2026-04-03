@@ -1,0 +1,8 @@
+[
+  {"id": "chat", "label": "Chat and Research"},
+  {"id": "code", "label": "Coding and Development"},
+  {"id": "voice", "label": "Voice and Speech APIs"},
+  {"id": "video", "label": "Video Generation"},
+  {"id": "image", "label": "Image Generation"},
+  {"id": "api", "label": "Cloud and API Services"}
+]

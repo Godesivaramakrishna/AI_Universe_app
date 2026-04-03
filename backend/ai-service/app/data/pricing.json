@@ -1,0 +1,7 @@
+[
+  {"tool": "Google Text-to-Speech", "pricing": "0.9 per hour equivalent"},
+  {"tool": "ElevenLabs", "pricing": "1.1 per hour equivalent"},
+  {"tool": "ChatGPT", "pricing": "token based"},
+  {"tool": "Claude", "pricing": "token based"},
+  {"tool": "Cursor", "pricing": "20 per month"}
+]

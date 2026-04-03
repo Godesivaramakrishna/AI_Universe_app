@@ -1,0 +1,5 @@
+[
+  {"name": "ChatGPT", "category": "chat", "pricing": "token based", "score": 0.95},
+  {"name": "Claude", "category": "chat", "pricing": "token based", "score": 0.96},
+  {"name": "Google Text-to-Speech", "category": "voice", "pricing": "0.9 per hour", "score": 0.94}
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "voice-google-tts",
+    "name": "Google Text-to-Speech",
+    "category": "voice",
+    "price_per_unit": 0.9,
+    "pricing": "0.9 per hour equivalent",
+    "score": 0.94,
+    "multilingual": true,
+    "languages": ["en", "es", "fr", "de", "hi", "ja"]
+  },
+  {
+    "id": "voice-elevenlabs",
+    "name": "ElevenLabs",
+    "category": "voice",
+    "price_per_unit": 1.1,
+    "pricing": "1.1 per hour equivalent",
+    "score": 0.92,
+    "multilingual": true,
+    "languages": ["en", "es", "fr", "de", "pt", "it"]
+  },
+  {
+    "id": "chat-chatgpt",
+    "name": "ChatGPT",
+    "category": "chat",
+    "price_per_unit": 0.2,
+    "pricing": "token based",
+    "score": 0.95,
+    "multilingual": true,
+    "languages": ["en", "es", "fr", "de", "hi", "ja"]
+  },
+  {
+    "id": "chat-claude",
+    "name": "Claude",
+    "category": "chat",
+    "price_per_unit": 0.25,
+    "pricing": "token based",
+    "score": 0.96,
+    "multilingual": true,
+    "languages": ["en", "es", "fr", "de"]
+  },
+  {
+    "id": "code-cursor",
+    "name": "Cursor",
+    "category": "code",
+    "price_per_unit": 20,
+    "pricing": "20 per seat monthly",
+    "score": 0.93,
+    "multilingual": false,
+    "languages": ["n/a"]
+  }
+]
